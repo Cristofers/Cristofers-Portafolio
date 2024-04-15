@@ -9,7 +9,7 @@ function Post(props) {
     return <ErrorMessage code={props.errorCode} />
   }
 
-  const title = `${props.title} // Zeno Rocha`
+  const title = `${props.title} // Cristofers Valdez Quintin`
   const description = props.description || ''
   const url = `https://zenorocha.com/${props.slug}`
   const date = new Date(props.date).toISOString()
@@ -33,7 +33,7 @@ function Post(props) {
       </Head>
 
       <ArticleJsonLd
-        authorName="Zeno Rocha"
+        authorName="Cristofers Valdez Quintin"
         type="Blog"
         url={url}
         title={title}

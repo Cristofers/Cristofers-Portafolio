@@ -15,13 +15,13 @@ import downloadIcon from '../public/static/icons/download.json'
 
 export async function getStaticProps() {
   const meta = {
-    title: 'About // Zeno Rocha',
+    title: 'About // Cristofers Valdez Quintin',
     description:
-      "Zeno Rocha is a Brazilian creator and programmer. He currently lives in San Francisco, California, where he's the Founder & CEO at Resend. His lifelong appreciation for building software and sharing knowledge led him to speak in over 110 conferences worldwide. His passion for open source put him on the top 20 most active users on GitHub at age 22. Before moving to the US, Zeno developed multiple applications, mentored startups, and worked at major companies in Latin America, such as Globo and Petrobras.",
-    tagline: 'Create. Share. Repeat.',
+      "Cristofers Valdez Quintin is a Brazilian creator and programmer. He currently lives in San Francisco, California, where he's the Founder & CEO at Resend. His lifelong appreciation for building software and sharing knowledge led him to speak in over 110 conferences worldwide. His passion for open source put him on the top 20 most active users on GitHub at age 22. Before moving to the US, Zeno developed multiple applications, mentored startups, and worked at major companies in Latin America, such as Globo and Petrobras.",
+    tagline: 'Some things about me',
     image: '/static/images/about-bw.jpg',
-    primaryColor: 'pink',
-    secondaryColor: 'purple',
+    primaryColor: 'green',
+    secondaryColor: 'cyan',
   }
 
   return { props: meta }
@@ -56,21 +56,14 @@ function About(props) {
               '@bp2': { marginTop: '-6px' },
             }}
           >
-            <strong>Hey, I'm Zeno Rocha</strong>
-            <Pronunciation />
-            I started as a software engineer back in 2009, working with Flash.
+            <strong>Hey, I'm Cristofers Valdez Quitin</strong> a future software
+            engineer, I usually develop small programs to expand my knowledge in
+            new technologies.
           </Paragraph>
           <Paragraph>
-            I'm the <strong>Founder & CEO</strong> at
-            Resend. Before that, I was a VP of Developer Experience at WorkOS and CPO at Liferay Cloud. I'm originally
-            from Brazil and now living in{' '}
-            <strong>San Francisco, California</strong> with my amazing wife and
-            beautiful daughter.
-          </Paragraph>
-          <Paragraph>
-            <strong>I love dark mode</strong>, open source, and side projects.
-            When I'm not working, I like running, watching movies, and{' '}
-            <strong>eating cheese</strong>.
+            I love to <strong>learn new technologies</strong> related to
+            programming, to know the <strong>"how it was made"</strong> of old
+            programs/video games and those nerdy things.
           </Paragraph>
         </Section>
       </Container>
@@ -78,7 +71,11 @@ function About(props) {
   }
 
   const renderBio = () => {
-    const btnStyle = { display: 'inline-flex', justifyContent: 'center', alignItems: 'center' }
+    const btnStyle = {
+      display: 'inline-flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+    }
     const iconStyle = { width: 24, height: 24, marginRight: 8 }
 
     return (
@@ -98,7 +95,13 @@ function About(props) {
             onMouseEnter={() => copyBioRef.current?.play()}
             onMouseLeave={() => copyBioRef.current?.stop()}
           >
-            <Lottie lottieRef={copyBioRef} style={iconStyle} animationData={copyBioIcon} loop={false} autoplay={false} />
+            <Lottie
+              lottieRef={copyBioRef}
+              style={iconStyle}
+              animationData={copyBioIcon}
+              loop={false}
+              autoplay={false}
+            />
             Copy Bio
           </ButtonPrimary>
           <span style={{ margin: '0 20px 0 10px' }}>•</span>
@@ -112,7 +115,13 @@ function About(props) {
             onMouseEnter={() => downloadRef.current?.play()}
             onMouseLeave={() => downloadRef.current?.stop()}
           >
-            <Lottie lottieRef={downloadRef} style={iconStyle} animationData={downloadIcon} loop={false} autoplay={false} />
+            <Lottie
+              lottieRef={downloadRef}
+              style={iconStyle}
+              animationData={downloadIcon}
+              loop={false}
+              autoplay={false}
+            />
             Download Headshot
           </ButtonPrimary>
         </ButtonsContainer>
@@ -194,8 +203,8 @@ function About(props) {
 
       {renderIntro()}
 
-      <h2>Bio</h2>
-      {renderBio()}
+      {/* <h2>Bio</h2>
+      {renderBio()} */}
 
       <h2>Career</h2>
       {renderAll()}

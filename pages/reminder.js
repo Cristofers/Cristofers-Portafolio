@@ -5,13 +5,13 @@ import { Box } from '../components/Box'
 
 export async function getStaticProps() {
   const meta = {
-    title: 'Reminder // Zeno Rocha',
+    title: 'Reminder // Cristofers Valdez Quintin',
     description:
       'Time is the most important asset. Time does not equal money. Time equals life. And you only have one chance to make it right.',
     tagline: 'Tick-tock. Tick-tock.',
     image: '/static/images/reminder-bw.jpg',
-    primaryColor: 'cyan',
-    secondaryColor: 'green',
+    primaryColor: 'green',
+    secondaryColor: 'cyan',
   }
 
   return { props: meta }

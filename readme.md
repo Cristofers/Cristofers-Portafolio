@@ -84,4 +84,4 @@ Here you'll find all the CSS, images, and font files.
 
 ## License
 
-[MIT License](http://zenorocha.mit-license.org/) © Zeno Rocha
+[MIT License](http://zenorocha.mit-license.org/) © Cristofers Valdez Quintin

@@ -9,11 +9,11 @@ import items from '../data/projects'
 
 export async function getStaticProps() {
   const meta = {
-    title: 'Projects // Zeno Rocha',
-    tagline: 'Work. Hobby. Open Source.',
+    title: 'Projects // Cristofers Valdez Quintin',
+    tagline: 'Some Projects',
     image: '/static/images/projects-bw.jpg',
-    primaryColor: 'cyan',
-    secondaryColor: 'green',
+    primaryColor: 'green',
+    secondaryColor: 'cyan',
   }
 
   return { props: meta }
@@ -64,7 +64,7 @@ function Projects(props) {
   }
 
   const { title, image } = props
-  const description = `I'm obsessed with side projects and <strong>building in public</strong>. Here you can navigate to <strong>${getTotalProjects()} different</strong> websites, apps, and libraries I built. Some projects are still active, others have been discontinued.`
+  const description = `Here are some projects that I made or I participated, there are ${getTotalProjects()} projects.`
 
   return (
     <>

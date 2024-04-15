@@ -9,48 +9,38 @@ export default function Footer() {
       icon: 'ri-mail-line',
     },
     {
-      title: 'Twitter',
-      url: 'https://twitter.com/zenorocha',
-      icon: 'ri-twitter-line',
-    },
-    {
       title: 'GitHub',
-      url: 'https://github.com/zenorocha',
+      url: 'https://github.com/Cristofers',
       icon: 'ri-github-line',
     },
     {
       title: 'linkedin',
-      url: 'https://linkedin.com/in/zenorocha',
+      url: 'https://www.linkedin.com/in/cristofers-valdez-quintin-b80955277/',
       icon: 'ri-linkedin-line',
-    },
-    {
-      title: 'Instagram',
-      url: 'https://instagram.com/zenorocha',
-      icon: 'ri-instagram-line',
     },
   ]
 
   const renderAnchor = (link, index) => {
     if (link.url.startsWith('http')) {
-      return <Anchor key={index} href={link.url} target="_blank">
-        <Title>{link.title}</Title>
-        <Icon className={link.icon} />
-      </Anchor>
+      return (
+        <Anchor key={index} href={link.url} target="_blank">
+          <Title>{link.title}</Title>
+          <Icon className={link.icon} />
+        </Anchor>
+      )
     }
 
-    return <Link key={index} href={link.url} passHref>
-      <Anchor>
-        <Title>{link.title}</Title>
-        <Icon className={link.icon} />
-      </Anchor>
-    </Link>
+    return (
+      <Link key={index} href={link.url} passHref>
+        <Anchor>
+          <Title>{link.title}</Title>
+          <Icon className={link.icon} />
+        </Anchor>
+      </Link>
+    )
   }
 
-  return (
-    <Container>
-      {links.map(renderAnchor)}
-    </Container>
-  )
+  return <Container>{links.map(renderAnchor)}</Container>
 }
 
 const Container = styled('footer', {
