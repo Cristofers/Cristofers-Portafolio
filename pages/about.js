@@ -1,3 +1,4 @@
+'use client'
 import { styled } from '../stitches.config'
 import React from 'react'
 import Head from 'next/head'

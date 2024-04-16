@@ -1,3 +1,4 @@
+'use client'
 import { styled } from '../stitches.config'
 import Head from 'next/head'
 import Navbar from '../components/Navbar'
