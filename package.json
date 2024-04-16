@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "zenorocha.com",
+  "name": "cristofers.com",
   "version": "5.0.0",
   "scripts": {
     "dev": "next dev",
@@ -13,6 +13,8 @@
     "@radix-ui/react-toast": "^1.0.0",
     "@react-email/html": "^0.0.1",
     "@stitches/react": "^1.2.6",
+    "@types/node": "^20.12.7",
+    "@types/react": "^18.2.79",
     "@typescript-eslint/eslint-plugin": "^7.7.0",
     "@typescript-eslint/parser": "^7.7.0",
     "date-fns": "^2.21.3",
