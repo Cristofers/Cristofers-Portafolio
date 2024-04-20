@@ -3,11 +3,9 @@ import { motion } from 'framer-motion'
 
 export const Article = styled('div', {
   border: '0',
-  width: '370px',
-  marginLeft: '20px',
+  width: '380px',
   textDecoration: 'none',
   '&:hover': { opacity: 1 },
-  '&:first-child': { marginLeft: 0 },
 })
 
 export const Container = styled('div', {

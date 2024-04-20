@@ -18,11 +18,14 @@ export default function Diploma({
   index,
   title,
 }: diplomaProps) {
+  console.log(`url(${image})`)
   return (
     <Article>
       <Animation index={index}>
         <Container>
-          <ImageContainer css={{ backgroundImage: `url(${image})` }} />
+          <ImageContainer
+            css={{ backgroundImage: `url(/static/images/diplomas/${image})` }}
+          />
           <Content>
             <Title>{title}</Title>
             <Description>{description}</Description>

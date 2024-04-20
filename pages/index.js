@@ -12,7 +12,8 @@ export async function getStaticProps() {
   return {
     props: {
       title: 'Cristofers Valdez Quintin',
-      description: 'Obsessed with developer experience',
+      description:
+        "Maybe I'm not the one you want, but I'm sure I'll be the one you need.",
       image: '/static/images/home-bw.jpg',
     },
   }
@@ -47,10 +48,7 @@ export default function Index(props) {
               <h1>{title}</h1>
               <p>
                 <strong>
-                  Founder & CEO at{' '}
-                  <a href="https://resend.com" target="blank">
-                    Resend
-                  </a>
+                  Future <b>Software Engineer</b>
                 </strong>
                 <br />
                 {description}

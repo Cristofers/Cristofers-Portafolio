@@ -4,26 +4,38 @@ export interface diplomaProps {
   title: string
   description: string
   duration: string
+  herf?: string
 }
 
 const items: diplomaProps[] = [
   {
     index: 1,
-    image: 'ruta/de/la/imagen1.jpg',
-    title: 'Diploma en Desarrollo Web',
-    description:
-      'Este diploma cubre los fundamentos del desarrollo web, incluyendo HTML, CSS y JavaScript.',
-    duration: '6 meses',
+    image: 'Solving_TypeScript_Errors.jpeg',
+    title: 'Solving TypeScript Errors',
+    description: '',
+    duration: 'Una semana',
   },
   {
     index: 2,
-    image: 'ruta/de/la/imagen2.jpg',
-    title: 'Diploma en Ciencia de Datos',
-    description:
-      'Este diploma proporciona conocimientos en análisis de datos, aprendizaje automático y estadísticas.',
-    duration: '12 meses',
+    image: 'React_TypeScript.jpeg',
+    title: 'React With TypeScript',
+    description: '',
+    duration: 'Una semana',
   },
-  // Puedes agregar más elementos de la misma manera si necesitas
+  {
+    index: 3,
+    image: 'BeginnersTypescript.jpeg',
+    title: 'Beginners Typescript',
+    description: '',
+    duration: 'Una semana',
+  },
+  {
+    index: 3,
+    image: 'Zod.jpeg',
+    title: 'Zod',
+    description: '',
+    duration: 'Una semana',
+  },
 ]
 
 export default items

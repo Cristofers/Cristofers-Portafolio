@@ -29,7 +29,7 @@ function Projects(props) {
           description={item.description}
           duration={item.duration}
           index={0}
-          image={''}
+          image={item.image}
           title={''}
         />
       )
@@ -60,8 +60,11 @@ function Projects(props) {
 }
 
 const DiplomasContainer = styled('div', {
-  margin: '10px 0 0 -20px',
-  '@bp2': { display: 'flex', justifyContent: 'space-between' },
+  display: 'grid',
+  gridTemplateColumns: 'repeat(1,1fr)',
+  '@bp2': {
+    gridTemplateColumns: 'repeat(2,1fr)',
+  },
 })
 
 Projects.Layout = Base
