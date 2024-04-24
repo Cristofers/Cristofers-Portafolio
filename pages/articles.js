@@ -20,7 +20,7 @@ export async function getStaticProps() {
   ]
 
   const featuredPosts = [
-    getPostBySlug('How to use useOptimistic (React)', featuredParams),
+    getPostBySlug('How_to_use_useOptimistic_(React)', featuredParams),
   ]
 
   return {
