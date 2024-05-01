@@ -7,7 +7,8 @@ import { useKBar } from 'kbar'
 
 export default function Navbar() {
   const router = useRouter()
-  const pages = ['About', 'Projects', 'Articles']
+  // const pages = ['About', 'Projects', 'Articles']
+  const pages = ['About', 'Articles']
   const [hovered, setHovered] = useState('')
   const { query } = useKBar()
 
@@ -15,7 +16,7 @@ export default function Navbar() {
     <AnimateSharedLayout>
       <Header>
         <Link href="/" passHref>
-          <ButtonLogo as="a">z</ButtonLogo>
+          <ButtonLogo as="a">C</ButtonLogo>
         </Link>
 
         <Nav>

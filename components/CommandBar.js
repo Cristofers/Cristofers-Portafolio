@@ -84,24 +84,24 @@ export default function CommandBar(props) {
         />
       ),
     },
-    {
-      id: 'source',
-      name: 'View Source',
-      shortcut: ['s'],
-      keywords: 'view-source',
-      section: 'General',
-      perform: () =>
-        window.open('https://github.com/zenorocha/zenorocha.com', '_blank'),
-      icon: (
-        <Lottie
-          lottieRef={sourceRef}
-          style={iconSize}
-          animationData={sourceIcon}
-          loop={false}
-          autoplay={false}
-        />
-      ),
-    },
+    // {
+    //   id: 'source',
+    //   name: 'View Source',
+    //   shortcut: ['s'],
+    //   keywords: 'view-source',
+    //   section: 'General',
+    //   perform: () =>
+    //     window.open('https://github.com/zenorocha/zenorocha.com', '_blank'),
+    //   icon: (
+    //     <Lottie
+    //       lottieRef={sourceRef}
+    //       style={iconSize}
+    //       animationData={sourceIcon}
+    //       loop={false}
+    //       autoplay={false}
+    //     />
+    //   ),
+    // },
     {
       id: 'home',
       name: 'Home',
